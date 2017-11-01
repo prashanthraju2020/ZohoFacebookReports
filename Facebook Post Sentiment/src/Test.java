@@ -1,3 +1,5 @@
+// This is the test file to check the integration of the source
+
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;
 import com.restfb.exception.FacebookOAuthException;
