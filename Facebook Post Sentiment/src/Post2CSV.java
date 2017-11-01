@@ -19,14 +19,12 @@ class Post2CSV {
         try {
             RConnection rConnection = new RConnection();
             rConnection.eval("library(RSentiment)");
-//            rConnection.eval("library(openNLPdata)");
             rConnection.assign("post", message);
             postSentiment = rConnection.eval("calculate_sentiment(post)").asList().at(1).asString();
             if (myCommentClass.getCommentsCount() > 0) {
                 totalComments = Integer.toString(myCommentClass.getCommentsCount());
                 rConnection.assign("comments", myCommentClass.getAllPostComments());
                 rConnection.eval("sentiData <- calculate_sentiment(comments)[2]");
-//                rConnection.eval("print(sentiData)");
                 String commentsSentiments[] = rConnection.eval("sentiData").asList().at(0).asStrings();
                 commentsSentiment = commonWord(commentsSentiments);
             }
