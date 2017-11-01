@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="REngine">
+    <archive path="C:/Users/admin/Downloads/Jars/REngine.jar" />
+    <archive path="C:/Users/admin/Downloads/Jars/RserveEngine.jar" />
+  </library>
+  <library name="R User Library" />
+  <library name="javacsv">
+    <archive path="C:/Users/admin/Downloads/javacsv2.1/javacsv.jar" />
+  </library>
+  <library name="restfb-1.46.0">
+    <archive path="C:/Users/admin/Downloads/Jars/restfb-1.46.0/restfb-1.46.0.jar" />
+    <archive path="C:/Users/admin/Downloads/Jars/REngine.jar" />
+    <archive path="C:/Users/admin/Downloads/Jars/RserveEngine.jar" />
+  </library>
+  <library name="R Skeletons" />
+</eclipse-userlibraries>
+
